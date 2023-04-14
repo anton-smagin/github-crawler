@@ -1,0 +1,13 @@
+<h1>Github Crawler</h1>
+
+<div class="search">
+  <%= form_with url: '/', method: :get do |form| %>
+    <%= form.label :search_term %>
+    <%= form.text_field :search_term, value: params[:search_term] %>
+    <%= form.submit 'Search' %>
+  <% end %>
+</div>
+
+<divv id="repositories_list">
+  <%= render partial: 'repositories_list', locals: { repositories: @repositories } %>
+</div>

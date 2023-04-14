@@ -1,0 +1,67 @@
+ /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* Style for search form */
+
+ h1 {
+  text-align: center;
+ }
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.search input[type="text"] {
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.search input[type="submit"] {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 5px 10px;
+}
+
+/* Style for repositories list */
+.repositories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.repository {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.repository a {
+  color: #2196f3;
+  text-decoration: none;
+}
